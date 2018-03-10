@@ -1,0 +1,9 @@
+.Draggable {
+  position: absolute;
+  height: 8vw;
+  width: 8vw;
+}
+.Draggable.dragging {
+  filter: drop-shadow(0 0 5px #000);
+  z-index: 100;
+}

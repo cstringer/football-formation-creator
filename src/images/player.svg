@@ -1,0 +1,31 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" width="80" height="70" viewBox="0 0 100 90">
+
+  <sodipodi:namedview inkscape:pageshadow="2" inkscape:pageopacity="0.0" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" showgrid="false" inkscape:zoom="5" inkscape:cx="19.519102" inkscape:cy="34.242496" inkscape:current-layer="svg5571"/>
+
+  <defs>
+    <inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 29.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="38 : 29.5 : 1" inkscape:persp3d-origin="19 : 19.666667 : 1" />
+    <inkscape:perspective  inkscape:persp3d-origin="15.5 : 19.666667 : 1" inkscape:vp_z="31 : 29.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 29.5 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective  inkscape:persp3d-origin="15.5 : 19.666667 : 1" inkscape:vp_z="31 : 29.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 29.5 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective  inkscape:persp3d-origin="50 : 12 : 1" inkscape:vp_z="100 : 18 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 18 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective  inkscape:persp3d-origin="50 : 13.333333 : 1" inkscape:vp_z="100 : 20 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 20 : 1" sodipodi:type="inkscape:persp3d"/>
+  </defs>
+
+  <path class="shirt" style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" d="M 31.218752,48 L 68.781331,48 L 74.500103,88.5 L 53.500059,88.5 L 50.500053,75 L 47.500046,88.5 L 25.5,88.5 L 31.218752,48 z" sodipodi:nodetypes="cccccccc"/>
+
+<!--
+  <path  style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;marker:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" d="M 69.5,136 L 56.5,136 L 56.5,102.5 L 71.5,102.5 L 69.5,136 z M 44.5,136 L 31.5,136 L 29.5,102.5 L 44.5,102.5 L 44.5,136 z" sodipodi:nodetypes="cccccccccc"/>
+  -->
+
+  <g  style="fill:#ffffff" transform="translate(31,-5)">
+
+    <path style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99999987999999995;stroke-linecap:square;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" d="M -0.5,58.5 L -0.5,31.5 L -6,37 L -19,24 L -0.5,5.5 L 9.656,5.5 C 14.359984,7.5600799 16.72203,8.5842032 19.074651,8.5812448 C 21.427273,8.5782865 23.770718,7.5482466 28.469,5.5 L 38.5,5.5 L 57,24 L 44,37 L 38.5,31.5 L 38.5,58.5 L -0.5,58.5"  sodipodi:nodetypes="ccccccsccccccc"/>
+
+    <a style="fill:#ffffff" transform="translate(-26.285714,-8.352429)" />
+
+    <a transform="translate(47.571429,0.857142)"  style="fill:#ffffff"/>
+
+  </g>
+
+  <style xmlns="http://www.w3.org/1999/xhtml" type="text/css"></style>
+
+</svg>

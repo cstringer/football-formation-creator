@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.Player {
+  filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.5));
+  font-family: Roboto, sans-serif;
+  height: 8vw;
+  pointer-events: all;
+  position: absolute;
+  width: 8vw;
+}
+
+.Player .editable input {
+  padding: 0;
+  text-align: center;
+  width: 2vw;
+}
+
+.Player-label,
+.Player-number {
+  position: relative;
+  text-align: center;
+  text-shadow:
+    1px 1px 0px #000, 1px -1px 0px #000,
+    -1px 1px 0px #000, -1px -1px 0px #000;
+}
+
+.Player-label {
+  font-size: 1.0vw;
+  top: -7.6vw;
+}
+.Player-label input {
+  font-size: 1.0vw;
+}
+
+.Player-number {
+  font-size: 1.8vw;
+  top: -7.7vw;
+}
+.Player-number input {
+  font-size: 1.8vw;
+}

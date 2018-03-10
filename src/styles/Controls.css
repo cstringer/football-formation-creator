@@ -1,0 +1,36 @@
+.Controls {
+}
+
+.Controls button,
+.Controls select {
+  cursor: pointer;
+}
+
+/*
+.Controls button {
+  background-color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 7px;
+  text-shadow: 1px 1px #000;
+}
+
+.Controls button:active {
+  background-color: #999;
+}
+
+.Controls button:hover {
+  border-color: #eee;
+}
+
+.Controls button[disabled] {
+  opacity: 0.5;
+}
+*/
+
+.Controls-colorList {
+  margin-left: 1.5em;
+}

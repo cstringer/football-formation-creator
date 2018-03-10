@@ -1,0 +1,23 @@
+.Pitch {
+  height: 61vw;
+  overflow: hidden;
+  width: 100%;
+}
+
+.Pitch-background,
+.Pitch-players {
+  height: 61vw;
+  left: 0;
+  overflow: hidden;
+  top: 8vw;
+  width: 100%;
+}
+
+.Pitch-background img {
+  height: auto;
+  width: 100%;
+}
+
+.Pitch-players {
+  position: absolute;
+}

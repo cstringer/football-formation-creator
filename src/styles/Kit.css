@@ -1,0 +1,9 @@
+.Kit {
+  cursor: move;
+  height: 100%;
+  width: 100%;
+}
+
+.Player.GK .Kit {
+  filter: invert(100%) hue-rotate(60deg);
+}
