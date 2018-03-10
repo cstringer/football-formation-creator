@@ -2,6 +2,7 @@
   "name": "football-formation-creator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cstringer.github.io/football-formation-creator",
   "dependencies": {
     "history": "^4.7.2",
     "lodash": "^4.17.5",
