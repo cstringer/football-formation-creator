@@ -19,21 +19,34 @@ class Draggable extends React.Component {
       isDragging: false
     };
 
-    this.onMouseDown = this.onMouseDown.bind(this);
-    this.onMouseMove = throttle(this.onMouseMove.bind(this), MOVE_THROTTLE_MS);
-    this.onMouseUp = this.onMouseUp.bind(this);
+    this.onDragStart = this.onDragStart.bind(this);
+    this.onDragMove = throttle(this.onDragMove.bind(this), MOVE_THROTTLE_MS);
+    this.onDragEnd = this.onDragEnd.bind(this);
   }
 
   calculatePosition(event) {
     const container = this.getContainer();
     const { dragElem } = this.refs;
+    let left = 0, top = 0;
 
-    let left = event.pageX - (dragElem.clientWidth / 2);
+    if (/touch/.test(event.type)) {
+      const { touches } = event;
+      const touch = touches[0];
+      left = touch.pageX;
+      top = touch.pageY;
+      console.log(event.type, left, top);
+    } else {
+      left = event.pageX;
+      top = event.pageY;
+    }
+
+    left = left - (dragElem.clientWidth / 2);
     left = left / container.clientWidth * 100;
     left = Math.max(left, this.props.maxLeft);
     left = Math.min(left, this.props.maxRight);
 
-    let top = event.pageY - 66;
+    //TODO: get top boundary coordinate
+    top = top - 66;
     top -= (dragElem.clientHeight / 2);
     top = top / container.clientHeight * 100;
     top = Math.max(top, this.props.maxTop);
@@ -53,15 +66,21 @@ class Draggable extends React.Component {
     return this.container;
   }
 
-  onMouseDown(event) {
+  onDragStart(event) {
+    event.preventDefault();
+    event.stopPropagation();
     const container = this.getContainer();
     this.drag = this.calculatePosition(event);
-    container.addEventListener('mouseup', this.onMouseUp);
-    container.addEventListener('mousemove', this.onMouseMove);
+    container.addEventListener('mousemove', this.onDragMove);
+    container.addEventListener('mouseup', this.onDragEnd);
+    document.addEventListener('touchmove', this.onDragEnd);
+    document.addEventListener('touchend', this.onDragMove);
     this.setState({ isDragging: true });
   }
 
-  onMouseMove(event) {
+  onDragMove(event) {
+    event.preventDefault();
+    event.stopPropagation();
     this.drag = this.calculatePosition(event);
     this.props.onMove({
       left: this.drag.left,
@@ -69,21 +88,24 @@ class Draggable extends React.Component {
     });
   }
 
-  onMouseUp(event) {
+  onDragEnd(event) {
+    event.preventDefault();
+    event.stopPropagation();
     this.drag = this.calculatePosition(event);
     this.props.onMove({
       left: this.drag.left,
       top: this.drag.top
     });
     const container = this.getContainer();
-    container.removeEventListener('mouseup', this.onMouseUp);
-    container.removeEventListener('mousemove', this.onMouseMove);
+    container.removeEventListener('mouseup', this.onDragEnd);
+    container.removeEventListener('mousemove', this.onDragMove);
+    document.removeEventListener('touchmove', this.onDragEnd);
+    document.removeEventListener('touchend', this.onDragMove);
     this.setState({ isDragging: false });
   }
 
   render() {
     const style = {
-      position: 'absolute',
       top: this.props.top,
       left: this.props.left
     };
@@ -93,7 +115,8 @@ class Draggable extends React.Component {
         className={cls}
         ref="dragElem"
         style={style}
-        onMouseDown={this.onMouseDown}
+        onMouseDown={this.onDragStart}
+        onTouchStart={this.onDragStart}
       >
         {this.props.children}
       </div>
