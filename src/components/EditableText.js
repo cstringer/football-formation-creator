@@ -23,7 +23,7 @@ class EditableText extends React.Component {
   }
 
   enableEditing(e) {
-    e.stopPropagation();
+    e.currentTarget.focus();
     this.setState({
       isEditing: true
     });
@@ -65,7 +65,8 @@ class EditableText extends React.Component {
       <div
         className={this.props.className + ' editable'}
         style={this.props.style}
-        onMouseDown={this.enableEditing}
+        onClick={this.enableEditing}
+        onMouseDown={(e) => e.stopPropagation()}
       >
         {this.state.isEditing ?  this.renderInput() : this.props.text}
       </div>
