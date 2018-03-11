@@ -1,4 +1,5 @@
 .Draggable {
+  cursor: move;
   position: absolute;
   height: 8vw;
   width: 8vw;

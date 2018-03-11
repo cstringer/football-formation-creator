@@ -9,6 +9,9 @@
   width: 8vw;
 }
 
+.Player .editable {
+  cursor: text;
+}
 .Player .editable input {
   padding: 0;
   text-align: center;
@@ -26,6 +29,7 @@
 
 .Player-label {
   font-size: 1.0vw;
+  text-transform: uppercase;
   top: -7.6vw;
 }
 .Player-label input {
