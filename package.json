@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf docs && cp -Rv build docs",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "push": "git push -u origin"
   },
   "devDependencies": {
     "react-svg-loader": "^2.1.0"
